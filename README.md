@@ -1,5 +1,5 @@
 # endless_walkingstick
-Walking stick resource for the QBCore Framework
+Walking stick resource for the QBCore & ESX Frameworks
 
 # Dependencies:
 qb-core: https://github.com/qbcore-framework/qb-core
