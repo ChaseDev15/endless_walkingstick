@@ -1,18 +1,6 @@
 print("endless-walkingstick - Walking Stick by Endless Development")
 
-if Config.Framework == "esx" then
-ESX = nil
-	
-Citizen.CreateThread(function()
-		while ESX == nil do
-			TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-			Citizen.Wait(0)
-		end
-elseif Config.Framework == "qb" then
-  QBCore = exports['qb-core']:GetCoreObject()
-else
-  print("^8ERROR: ^3Unsupported or misspelled framework^7")
-end
+local QBCore = exports['qb-core']:GetCoreObject()
 
 local used = false
 
